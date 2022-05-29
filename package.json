@@ -1,0 +1,15 @@
+{
+  "name": "brownreos",
+  "version": "1.0.0",
+  "description": "Brownreos tailwind project",
+  "main": "index.js",
+  "scripts": {
+     "build": "npx tailwindcss -i ./css/index.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "Igwegbe Caleb",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

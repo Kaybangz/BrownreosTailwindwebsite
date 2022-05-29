@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.image_container{
+        position: relative;
+}
+
+.brownie1, .brownie2, .brownie3, .brownie4{
+        position: absolute;
+        filter: drop-shadow(-10px 10px 6px rgba(0, 0, 0, .5));
+}
+
+.brownie1{
+        top: 0;
+        left: 40px;
+        width: 15%;
+        animation: brownie1 8s infinite alternate-reverse ease-in-out;
+}
+
+.brownie2{
+        top: 0;
+        right: 20px;
+        animation: brownie2 10s infinite alternate-reverse ease-in-out;
+}
+
+.brownie3{
+        width: 14%;
+        bottom: 0;
+        right: 60px;
+        animation: brownie3 15s infinite alternate-reverse ease-in-out;
+}
+
+.brownie4{
+        width: 13%;     
+        bottom: 0;
+        left: 60px;
+        animation: brownie4 13s infinite alternate-reverse ease-in-out;
+}
+
+.right{
+        width: 92%;
+}
+
+
+@keyframes brownie1{
+        from{
+                transform: translateX(100px) rotate(0deg);
+        } 
+        to{
+                transform: translateX(0) rotateZ(100deg);
+        }
+}
+
+@keyframes brownie2{
+        from{
+                transform: translateX(-30px) rotate(0deg);
+        } 
+        to{
+                transform: translateX(30px) rotate(100deg);
+        }
+}
+
+@keyframes brownie3{
+        from{
+                transform: translateY(0) rotate(0deg);
+        } 
+        to{
+                transform: translateY(100px) rotate(80deg);
+        }
+}
+
+@keyframes brownie4{
+        from{
+                transform: translateX(60px) rotate(0deg);
+        } 
+        to{
+                transform: translateX(0) rotate(60deg);
+        }
+}
+
+@media screen and (min-width: 640px) {
+        .hero_image {
+                -webkit-clip-path: circle(50% at 61% 73%);
+        
+        
+                clip-path:  circle(50% at 61% 73%);
+        
+        
+                object-fit: cover;
+        } 
+        
+        .right{
+                width: 40%;
+        }
+}

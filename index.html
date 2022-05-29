@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>BrownReos</title>
+  </head>
+  <body class="font-nunito pb-10 relative">
+    <!--******NAVIGATION SECTION STARTS HERE********-->
+    <header class="w-full bg-gray-100 fixed text-white top-0 z-40">
+      <nav
+        class="container mx-auto py-2 px-2 md:px-6 lg:px-12 flex sm:justify-between sm:items-center flex-wrap"
+      >
+        <h1
+          class="text-xl text-darkCookieBrown tracking-wide p-2 font-extrabold"
+        >
+          <a href="#">BrownReos</a>
+        </h1>
+
+        <button
+          class="text-darkCookieBrown menu-toggle text-2xl inline-flex items-center p-2 rounded-md sm:hidden ml-auto"
+          data-target="#navMenu"
+        >
+          <ion-icon name="menu" onclick="toggleMenu(this)"></ion-icon>
+        </button>
+
+        <section
+          id="navMenu"
+          class="hidden text-darkCookieBrown w-full sm:inline-flex sm:flex-grow sm:w-auto mt-3 sm:mt-0 sm:items-center transition-all ease-in-out z-50"
+        >
+          <div
+            class="space-y-6 flex flex-col p-2 mb-5 sm:mb-0 sm:inline-flex sm:flex-row sm:ml-auto sm:space-x-6 sm:space-y-0"
+          >
+            <ion-icon
+              name="search"
+              class="cursor-pointer"
+              size="small"
+            ></ion-icon>
+            <ion-icon
+              name="cart"
+              class="cursor-pointer"
+              size="small"
+            ></ion-icon>
+          </div>
+
+          <div
+            class="sm:inline-flex sm:flex-row sm:ml-auto sm:space-x-6 sm:space-y-0 space-y-6 flex flex-col transition-all ease-in-out"
+          >
+            <span
+              class="hover:bg-cookieBrownAlt hover:text-white sm:p-2 p-2 w-fit rounded duration-500"
+              ><a href="#">Home</a></span
+            >
+
+            <span
+              class="hover:bg-cookieBrownAlt hover:text-white sm:p-2 p-2 w-fit rounded duration-500"
+              ><a href="#">About Us</a></span
+            >
+
+            <span
+              class="p-2 w-fit rounded duration-500 hover:bg-cookieBrownAlt hover:text-white sm:p-2"
+              ><a href="#">Products</a></span
+            >
+
+            <span
+              class="hover:bg-cookieBrownAlt hover:text-white sm:p-2 p-2 w-fit rounded duration-500"
+              ><a href="#">Contact</a></span
+            >
+          </div>
+        </section>
+      </nav>
+    </header>
+    <!--*******NAVIGATION SECTION ENDS HERE*******-->
+
+    <!--*******HERO SECTION STARTS HERE*******-->
+    <main
+      class="h-full w-auto pt-36 pb-36 flex items-center justify-center bg-gray-300 sm:pt-48 sm:pb-48"
+    >
+      <section
+        class="container mx-auto flex flex-col-reverse sm:flex-row justify-between items-center px-3 md:px-6 lg:px-16 sm:space-x-6"
+      >
+        <div
+          class="flex flex-col items-center w-full mt-4 space-y-4 sm:space-y-8 md:w-full sm:w-full sm:items-start"
+        >
+          <h1
+            class="max-w-max text-2xl font-extrabold uppercase text-CookieBrownAlt text-center sm:text-left md:text-3xl lg:text-4xl"
+          >
+            Life is short, eat brownies first.
+          </h1>
+          <h4
+            class="max-w-max text-md font-bold text-center sm:text-left text-CookieBrownAlt md:text-lg lg:text-xl"
+          >
+            All you need is love. But a little chocolate now and then doesn't
+            hurt.
+          </h4>
+          <button
+            class="bg-cookieBrown hover:bg-cookieBrownAlt rounded-md p-2 text-white text-center sm:text-left"
+          >
+            <a href="#">Order now</a>
+          </button>
+        </div>
+
+        <div class="image_container w-full sm:mb-0 sm:w-full md:w-full">
+          <img
+            class="hero_image rounded-xl sm:rounded-none w-full z-10"
+            src="assets/hero_image_alt.png"
+            alt="brownie image"
+          />
+          <img class="brownie1" src="assets/browniePhoto1.png" alt="" />
+          <img class="brownie2" src="assets/browniePhoto2.png" alt="" />
+          <img class="brownie3" src="assets/browniePhoto3.png" alt="" />
+          <img class="brownie4" src="assets/browniePhoto4.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <!--*******HERO SECTION ENDS HERE********-->
+
+    <!--******ABOUT SECTION STARTS HERE********-->
+    <section class="h-full py-14 w-auto flex items-center justify-center">
+      <div
+        class="container mx-auto px-3 flex flex-col items-center justify-center sm:flex-row md:px-4 lg:px-6"
+      >
+        <div
+          style="
+            background-image: url(assets/holding_brownie.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          "
+          class="left w-full rounded h-96 sm:w-2/3 lg:w-1/2"
+        ></div>
+        <div
+          class="right h-full flex flex-col items-center justify-center p-5 bg-white rounded pb-6 -mt-20 sm:mb-0 sm:-mt-0 sm:-ml-20"
+        >
+          <h2 class="font-extrabold text-xl mb-4 uppercase">About Us</h2>
+          <p class="mb-8 text-center sm: text-inherit">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempora
+            odit id velit voluptate dolorem nulla rerum minus adipisci rem
+            nesciunt tenetur dignissimos non laudantium aut similique, eum ad
+            neque!
+          </p>
+
+          <button
+            class="bg-cookieBrown rounded-md p-2 text-white hover:bg-CookieBrownAlt"
+          >
+            <a href="#">Read more</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--******ABOUT SECTION ENDS HERE***********-->
+
+    <!--******BEST SELLERS SECTION STARTS HERE*******-->
+    <section
+      class="h-full w-auto bg-gray-300 flex flex-col items-center justify-center"
+    >
+      <h2 class="mt-16 font-extrabold text-xl mb-4 uppercase">Best Sellers</h2>
+
+      <div
+        class="container mx-auto pb-20 grid items-center justify-items-stretch sm:gap-x-3 px-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:px-4 lg:px-6"
+      >
+        <span class="flex flex-col items-center justify-center py-5">
+          <img
+            src="assets/redvelvet_brownie.jpg"
+            class="rounded h-60 w-full object-cover mb-3"
+            alt="red velvet brownie"
+          />
+          <h4 class="font-bold text-cookieBrownAlt">Red velvet brownie</h4>
+          <h6 class="font-bold text-cookieBrownAlt">$16.00</h6>
+        </span>
+
+        <span class="flex flex-col items-center justify-center py-5">
+          <img
+            src="assets/raspberry_brownie.webp"
+            class="rounded h-60 w-full object-cover mb-3"
+            alt="raspberry brownie"
+          />
+          <h4 class="font-bold text-cookieBrownAlt">Raspberry brownie</h4>
+          <h6 class="font-bold text-cookieBrownAlt">$18.00</h6>
+        </span>
+
+        <span class="flex flex-col items-center justify-center py-5">
+          <img
+            src="assets/vegan_brownie.jpg"
+            class="rounded h-60 w-full object-cover sm:justify-self-stretch mb-3"
+            alt="vegan brownie"
+          />
+          <h4 class="font-bold text-cookieBrownAlt">Vegan brownie</h4>
+          <h6 class="font-bold text-cookieBrownAlt">$12.00</h6>
+        </span>
+
+        <span
+          class="flex flex-col items-center justify-center py-5 md:col-start-2 md:col-end-2 lg:col-start-4 lg:col-end-4"
+        >
+          <img
+            src="assets/double_chocolate_brownie.webp"
+            class="rounded h-60 w-full object-cover mb-3"
+            alt="vegan brownie"
+          />
+          <h4 class="font-bold text-cookieBrownAlt">
+            Double chocolate brownie
+          </h4>
+          <h6 class="font-bold text-cookieBrownAlt">$16.00</h6>
+        </span>
+      </div>
+    </section>
+    <!--******BEST SELLERS SECTION ENDS HERE*********-->
+
+    <!--******ADD TO CART SECTION STARTS*************-->
+    <section class="bg-velvetCookieBrown h-full">
+      <div
+        class="container mx-auto flex flex-col pt-10 pb-12 justify-between items-center px-3 md:px-4 lg:px-6 sm:space-x-6"
+      >
+        <h2 class="font-extrabold text-xl text-white mb-4 uppercase">
+          Quick buy
+        </h2>
+
+        <p class="text-white mb-5">
+          Choose a beautifully wrapped gift box of award-winning brownies,
+          finished with a hand-written note.
+        </p>
+
+        <div
+          class="container mx-auto pt-7 pb-20 grid items-center justify-items-stretch gap-y-3 sm:items-start sm:justify-center sm:gap-x-3 sm:gap-y-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <select
+            class="outline-none border-none h-10 rounded px-1"
+            name="brownie"
+            id="brownie"
+          >
+            <option value="classicVegan">Classic or vegan</option>
+            <option value="classic">Classic</option>
+            <option value="vegan">Vegan</option>
+          </select>
+
+          <select
+            class="outline-none border-none h-10 rounded px-1"
+            name="boxsize"
+            id="boxsize"
+          >
+            <option>Box size</option>
+            <option value="4">4</option>
+            <option value="8">8</option>
+            <option value="16">16</option>
+          </select>
+
+          <select
+            class="outline-none border-none h-10 rounded px-1"
+            name="flavour"
+            id="flavour"
+          >
+            <option>Select a classic flavour</option>
+            <option value="coconut">Coconut</option>
+            <option value="raspberry">Raspberry</option>
+            <option value="caramel fudge">Caramel fudge</option>
+            <option value="salted caramel">Salted caramel</option>
+            <option value="wild mint">Wild mint</option>
+          </select>
+
+          <select
+            class="outline-none border-none h-10 rounded px-1"
+            name="occasion"
+            id="occasion"
+          >
+            <option>Select an occasion (optional)</option>
+            <option value="no occasion">No occasion</option>
+            <option value="birthday">Happy Birthday!</option>
+            <option value="birthday">Congrats</option>
+            <option value="birthday">Just because</option>
+            <option value="birthday">Happy Anniversary</option>
+            <option value="birthday">Get well soon</option>
+          </select>
+
+          <textarea
+            class="outline-none border-none h-28 rounded p-2 sm:col-span-2"
+            placeholder="Add a handwritten message"
+          ></textarea>
+
+          <h3 class="text-white font-bold text-xl flex justify-center">
+            $20.00
+          </h3>
+
+          <button
+            class="bg-gray-200 text-cookieBrown p-3 rounded font-bold hover:bg-gray-300 duration-500 md:col-span-2 md:p-4"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--******ADD TO CART SECTION ENDS*************-->
+
+    <!--********VARIETY BOX SECTION STARTS**************-->
+    <section
+      class="h-full bg-gray-300 py-24 w-auto flex items-center justify-center"
+    >
+      <div
+        class="container mx-auto px-3 flex flex-col items-center justify-center sm:flex-row md:px-4 lg:px-6"
+      >
+        <div
+          class="right h-full flex flex-col items-center justify-center p-5 bg-white rounded pb-6 -mb-10 z-10 sm:-mb-0 sm:-mr-20"
+        >
+          <h2 class="font-extrabold text-lg mb-4 uppercase text-cookieBrown">
+            BROWNIE VARIETY BOX
+          </h2>
+          <p class="mb-8 text-center sm: text-inherit text-cookieBrown">
+            All your favourite flavours in one box
+          </p>
+
+          <h6 class="text-cookieBrown font-bold">From $25.00</h6>
+        </div>
+        <div
+          style="
+            background-image: url(assets/variety_box.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          "
+          class="left w-full rounded h-96 sm:w-2/3 lg:w-1/2"
+        ></div>
+      </div>
+    </section>
+    <!--********VARIETY BOX SECTION ENDS**************-->
+
+    <!--********FOOTER SECTION STARTS*****************-->
+    <footer>
+      <section
+        class="container mx-auto px-3 mt-7 grid gap-x-4 gap-y-5 sm:grid-cols-2 sm:mt-14 md:grid-cols-3"
+      >
+        <div>
+          <h3 class="text-lg font-bold uppercase text-cookieBrown">About</h3>
+          <p>Our Team</p>
+          <p>Ingredients</p>
+          <p>Privacy Policy</p>
+          <p>Terms and Conditions</p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold uppercase text-cookieBrown">
+            Locations
+          </h3>
+          <p>Lagos</p>
+          <p>Abuja</p>
+          <p>Enugu</p>
+          <p>Port-harcourt</p>
+          <p>Benin</p>
+          <p>Calabar</p>
+          <p>Anambra</p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold uppercase text-cookieBrown">
+            Follow Us
+          </h3>
+          <div class="flex gap-3">
+            <ion-icon name="logo-facebook" class="cursor-pointer"></ion-icon>
+            <ion-icon name="logo-twitter" class="cursor-pointer"></ion-icon>
+            <ion-icon name="logo-instagram" class="cursor-pointer"></ion-icon>
+            <ion-icon name="logo-whatsapp" class="cursor-pointer"></ion-icon>
+          </div>
+
+          <div class="mt-2 mb-2">
+            <h5 class="font-bold">Telephone</h5>
+            <p>+2348179244682</p>
+          </div>
+
+          <div>
+            <h5 class="font-bold">Email</h5>
+            <p>hello@Brownreos.co.ng</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!--********FOOTER SECTION ENDS*****************-->
+
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      gsap.from("nav", {
+        duration:1,
+        ease:"power2.inOut",
+        y: -60
+      })
+    </script>
+  </body>
+</html>
