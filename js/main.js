@@ -6,3 +6,5 @@ const toggleMenu = (e) => {
     ? ((e.name = "close"), menuItems.classList.remove("hidden"))
     : ((e.name = "menu"), menuItems.classList.add("hidden"));
 };
+
+

@@ -88,29 +88,31 @@
         class="container mx-auto flex flex-col-reverse sm:flex-row justify-between items-center px-3 md:px-6 lg:px-16 sm:space-x-6"
       >
         <div
-          class="flex flex-col items-center w-full mt-4 space-y-4 sm:space-y-8 md:w-full sm:w-full sm:items-start"
+          class="flex flex-col items-center w-full mt-6 space-y-6 sm:space-y-8 md:w-full sm:w-full sm:items-start"
         >
           <h1
-            class="max-w-max text-2xl font-extrabold uppercase text-CookieBrownAlt text-center sm:text-left md:text-3xl lg:text-4xl"
+            class="heroSec_h1 max-w-max text-2xl font-extrabold uppercase text-CookieBrownAlt text-center sm:text-left md:text-3xl lg:text-4xl"
           >
             Life is short, eat brownies first.
           </h1>
           <h4
-            class="max-w-max text-md font-bold text-center sm:text-left text-CookieBrownAlt md:text-lg lg:text-xl"
+            class="heroSec_h4 max-w-max text-md font-bold text-center sm:text-left text-CookieBrownAlt md:text-lg lg:text-xl"
           >
             All you need is love. But a little chocolate now and then doesn't
             hurt.
           </h4>
           <button
-            class="bg-cookieBrown hover:bg-cookieBrownAlt rounded-md p-2 text-white text-center sm:text-left"
+            class="heroSec_btn bg-cookieBrown hover:bg-cookieBrownAlt rounded-md p-2 text-white text-center sm:text-left"
           >
             <a href="#">Order now</a>
           </button>
         </div>
 
-        <div class="image_container w-full sm:mb-0 sm:w-full md:w-full">
+        <div
+          class="heroSec_img image_container w-full sm:mb-0 sm:w-full md:w-full"
+        >
           <img
-            class="hero_image rounded-xl sm:rounded-none w-full z-10"
+            class="hero_image rounded-xl sm:rounded-none w-[100%] z-10"
             src="assets/hero_image_alt.png"
             alt="brownie image"
           />
@@ -124,7 +126,10 @@
     <!--*******HERO SECTION ENDS HERE********-->
 
     <!--******ABOUT SECTION STARTS HERE********-->
-    <section class="h-full py-14 w-auto flex items-center justify-center">
+    <section
+      id="aboutSection"
+      class="h-full py-14 w-auto flex items-center justify-center"
+    >
       <div
         class="container mx-auto px-3 flex flex-col items-center justify-center sm:flex-row md:px-4 lg:px-6"
       >
@@ -140,8 +145,10 @@
         <div
           class="right h-full flex flex-col items-center justify-center p-5 bg-white rounded pb-6 -mt-20 sm:mb-0 sm:-mt-0 sm:-ml-20"
         >
-          <h2 class="font-extrabold text-xl mb-4 uppercase">About Us</h2>
-          <p class="mb-8 text-center sm: text-inherit">
+          <h2 class="aboutSec_h2 font-extrabold text-xl mb-4 uppercase">
+            About Us
+          </h2>
+          <p class="aboutSec_p mb-8 text-center sm: text-inherit">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempora
             odit id velit voluptate dolorem nulla rerum minus adipisci rem
             nesciunt tenetur dignissimos non laudantium aut similique, eum ad
@@ -149,7 +156,7 @@
           </p>
 
           <button
-            class="bg-cookieBrown rounded-md p-2 text-white hover:bg-CookieBrownAlt"
+            class="aboutSec_btn bg-cookieBrown rounded-md p-2 text-white hover:bg-CookieBrownAlt"
           >
             <a href="#">Read more</a>
           </button>
@@ -159,15 +166,17 @@
     <!--******ABOUT SECTION ENDS HERE***********-->
 
     <!--******BEST SELLERS SECTION STARTS HERE*******-->
-    <section
+    <section id="bestSellerSection"
       class="h-full w-auto bg-gray-300 flex flex-col items-center justify-center"
     >
-      <h2 class="mt-16 font-extrabold text-xl mb-4 uppercase">Best Sellers</h2>
+      <h2 class="bsSec_h2 mt-16 font-extrabold text-xl mb-4 uppercase">
+        Best Sellers
+      </h2>
 
       <div
         class="container mx-auto pb-20 grid items-center justify-items-stretch sm:gap-x-3 px-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:px-4 lg:px-6"
       >
-        <span class="flex flex-col items-center justify-center py-5">
+        <span class="bsSec_img flex flex-col items-center justify-center py-5">
           <img
             src="assets/redvelvet_brownie.jpg"
             class="rounded h-60 w-full object-cover mb-3"
@@ -177,7 +186,7 @@
           <h6 class="font-bold text-cookieBrownAlt">$16.00</h6>
         </span>
 
-        <span class="flex flex-col items-center justify-center py-5">
+        <span class="bsSec_img flex flex-col items-center justify-center py-5">
           <img
             src="assets/raspberry_brownie.webp"
             class="rounded h-60 w-full object-cover mb-3"
@@ -187,7 +196,7 @@
           <h6 class="font-bold text-cookieBrownAlt">$18.00</h6>
         </span>
 
-        <span class="flex flex-col items-center justify-center py-5">
+        <span class="bsSec_img flex flex-col items-center justify-center py-5">
           <img
             src="assets/vegan_brownie.jpg"
             class="rounded h-60 w-full object-cover sm:justify-self-stretch mb-3"
@@ -198,7 +207,7 @@
         </span>
 
         <span
-          class="flex flex-col items-center justify-center py-5 md:col-start-2 md:col-end-2 lg:col-start-4 lg:col-end-4"
+          class="bsSec_img flex flex-col items-center justify-center py-5 md:col-start-2 md:col-end-2 lg:col-start-4 lg:col-end-4"
         >
           <img
             src="assets/double_chocolate_brownie.webp"
@@ -215,9 +224,9 @@
     <!--******BEST SELLERS SECTION ENDS HERE*********-->
 
     <!--******ADD TO CART SECTION STARTS*************-->
-    <section class="bg-velvetCookieBrown h-full">
+    <section id="atcSection" class="bg-velvetCookieBrown h-full">
       <div
-        class="container mx-auto flex flex-col pt-10 pb-12 justify-between items-center px-3 md:px-4 lg:px-6 sm:space-x-6"
+        class="atcSec container mx-auto flex flex-col pt-10 pb-12 justify-between items-center px-3 md:px-4 lg:px-6 sm:space-x-6"
       >
         <h2 class="font-extrabold text-xl text-white mb-4 uppercase">
           Quick buy
@@ -299,7 +308,7 @@
     <!--******ADD TO CART SECTION ENDS*************-->
 
     <!--********VARIETY BOX SECTION STARTS**************-->
-    <section
+    <section id="vbSection"
       class="h-full bg-gray-300 py-24 w-auto flex items-center justify-center"
     >
       <div
@@ -308,14 +317,16 @@
         <div
           class="right h-full flex flex-col items-center justify-center p-5 bg-white rounded pb-6 -mb-10 z-10 sm:-mb-0 sm:-mr-20"
         >
-          <h2 class="font-extrabold text-lg mb-4 uppercase text-cookieBrown">
+          <h2
+            class="vbSec_h2 font-extrabold text-lg mb-4 uppercase text-cookieBrown"
+          >
             BROWNIE VARIETY BOX
           </h2>
-          <p class="mb-8 text-center sm: text-inherit text-cookieBrown">
+          <p class="vbSec_p mb-8 text-center sm: text-inherit text-cookieBrown">
             All your favourite flavours in one box
           </p>
 
-          <h6 class="text-cookieBrown font-bold">From $25.00</h6>
+          <h6 class="vbSec_h6 text-cookieBrown font-bold">From $25.00</h6>
         </div>
         <div
           style="
@@ -383,6 +394,7 @@
 
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -391,19 +403,163 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <script>
+      gsap.registerPlugin(ScrollTrigger);
+
       gsap.from("nav", {
-        duration:1,
-        ease:"power2.inOut",
-        y: -60
-      })
+        duration: 1,
+        ease: "power2.inOut",
+        y: -60,
+      });
+
+      gsap.from(".heroSec_h1", {
+        duration: 1.2,
+        ease: "power2.inOut",
+        y: 60,
+        delay: 0.4,
+        opacity: 0,
+      });
+
+      gsap.from(".heroSec_h4", {
+        duration: 1.3,
+        ease: "power2.inOut",
+        y: 60,
+        delay: 0.6,
+        opacity: 0,
+      });
+
+      gsap.from(".heroSec_btn", {
+        duration: 1.4,
+        ease: "power2.inOut",
+        y: 60,
+        delay: 0.8,
+        opacity: 0,
+      });
+
+      gsap.from(".heroSec_img", {
+        duration: 1.4,
+        ease: "power2.inOut",
+        y: -60,
+        delay: 0.6,
+        opacity: 0,
+      });
+
+      // ABOUT SECTION ANIMATION
+      gsap.from(".aboutSec_h2", {
+        scrollTrigger: {
+          trigger: "#aboutSection",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "restart none none reverse",
+        },
+
+        duration: 1.2,
+        ease: "power2.inOut",
+        y: 60,
+        opacity: 0,
+      });
+
+      gsap.from(".aboutSec_p", {
+        scrollTrigger: {
+          trigger: "#aboutSection",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "restart none none reverse",
+        },
+
+        duration: 1.2,
+        ease: "power2.inOut",
+        y: 60,
+        opacity: 0,
+      });
+
+      gsap.from(".aboutSec_btn", {
+        scrollTrigger: {
+          trigger: "#aboutSection",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "restart none none reverse",
+        },
+
+        duration: 1.2,
+        ease: "power2.inOut",
+        y: 60,
+        opacity: 0,
+      });
+
+      // BEST SELLERS SECTION ANIMATION
+      gsap.from(".bsSec_img", {
+        scrollTrigger: {
+          trigger: "#bestSellerSection",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "restart none none reverse",
+        },
+
+        duration: 1.2,
+        ease: "power2.inOut",
+        y: 60,
+        opacity: 0,
+        stagger: 0.3,
+      });
+
+      // ADD TO CART SECTION ANIMATION
+      gsap.from(".atcSec", {
+        scrollTrigger: {
+          trigger: "#atcSection",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "restart none none reverse",
+        },
+
+        duration: 1.2,
+        ease: "power2.inOut",
+        y: 60,
+        opacity: 0,
+      });
+
+      // VARIETY BOX SECTION ANIMATION
+      gsap.from(".vbSec_h2", {
+        scrollTrigger: {
+          trigger: "#vbSection",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "restart none none reverse",
+        },
+
+        duration: 1.2,
+        ease: "power2.inOut",
+        y: 60,
+        opacity: 0,
+      });
+
+      gsap.from(".vbSec_p", {
+        scrollTrigger: {
+          trigger: "#vbSection",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "restart none none reverse",
+        },
+
+        duration: 1.2,
+        ease: "power2.inOut",
+        y: 60,
+        opacity: 0,
+      });
+
+      gsap.from(".vbSec_h6", {
+        scrollTrigger: {
+          trigger: "#vbSection",
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "restart none none reverse",
+        },
+
+        duration: 1.2,
+        ease: "power2.inOut",
+        y: 60,
+        opacity: 0,
+      });
     </script>
   </body>
 </html>
